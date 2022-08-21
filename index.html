@@ -5,8 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Master</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Manage your money here</h1>
+    <div class="bg-secondary mx-5 p-5">
+        <header>
+            <h2 class="text-center">Money Master💰</h2>
+        </header>
+        <main class="text-center">
+            <h3>Income</h3>
+                <h5 class="d-inline text-bold">Income: </h5>
+                <input id="income-field" type="text">
+                <h3>Expenses</h3>
+                <div class="d-flex flex-column">
+                    <div class="mb-3">
+                        <h5 class="d-inline text-bold ">Food: </h5>
+                        <input id="food-field" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <h5 class="d-inline text-bold">Rent: </h5>
+                        <input id="rent-field" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <h5 class="d-inline text-bold">Clothes: </h5>
+                        <input id="clothes-field" type="text">
+                    </div>
+                </div>
+                <button id="calculate-btn" class="btn btn-primary text-white">Calculate</button>
+                <h4 class="my-3">Total Expense: $<span id="total-expense-element">1000</span></h4>
+                <h4 class="mb-3">Balance: $<span id="remaining-balance-element">500</span></h4>
+                
+                <h4 class="d-inline text-bold">Save:</h4>
+                <input id="saving-percentage" type="text"> <span class="text-bold">%</span>
+                <button id="percentage-button" class="btn btn-primary d-inline">Save</button>
+
+                <h4 class="my-3">Saving Amount: $<span id="savings-amount-element">1000</span></h4>
+                <h4 class="mb-3">Remaining Balance: $<span id="final-balance-element">500</span></h4>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
